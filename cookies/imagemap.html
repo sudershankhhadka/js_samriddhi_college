@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Maps Example</title>
+</head>
+<body>
+
+  <h2>Image with Fixed Dimensions and Alt Text</h2>
+  <img src="car-image.jpg" alt="Cars" width="120" height="120">
+
+  <h2>Client-Side Image Map</h2>
+  <img src="client-side-image.jpg" alt="Client-side Image Map" usemap="#clientmap" width="300" height="200">
+  <map name="clientmap">
+    <area shape="rect" coords="0,0,150,200" href="https://www.example.com" alt="Link 1">
+    <area shape="circle" coords="200,100,50" href="https://www.example2.com" alt="Link 2">
+  </map>
+
+  <h2>Server-Side Image Map</h2>
+  <img src="server-side-image.php" alt="Server-side Image Map" usemap="#servermap" width="300" height="200">
+  <map name="servermap">
+    <area shape="rect" coords="0,0,150,200" href="server-side-handler.php" alt="Link 1">
+    <area shape="circle" coords="200,100,50" href="server-side-handler.php" alt="Link 2">
+  </map>
+
+</body>
+</html>
+

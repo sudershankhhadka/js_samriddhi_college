@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Input the phone number: <input type="text" id="num">
+    <input type="button" onclick="numberCheck()" value="submit">
+
+    <script>
+        function numberCheck() {
+            // Write a js program to take the input in the following format +97798XXXXXXX
+            var num = document.getElementById('num').value;
+            var pattern = /^\+97798\d{8}$/;
+
+            if (pattern.test(num)) {
+                alert("Valid phone number");
+            } else {
+                alert("Invalid phone number");
+            }
+        }
+    </script>
+</body>
+</html>

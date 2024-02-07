@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Input the value <input type="text" id="test">
+    <input type="button" onclick="regTest()"   value="submit">
+    
+
+    <script>
+        function regTest(){
+            var pattern = /^[A-Z]{10} $/ ;
+            var txtValue = document.getElementById('test').value;
+            if(pattern.test(txtValue)){
+                alert("valid content");
+            }
+            else{
+                alert("Ïnvalid comtent");
+            }
+
+
+        }
+    </script>
+</body>
+</html>

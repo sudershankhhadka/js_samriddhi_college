@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text and Block Formatting</title>
+  <style>
+    /* Text-level formatting */
+    .italic-text {
+      font-style: italic;
+    }
+
+    .bold-text {
+      font-weight: bold;
+    }
+
+    /* Block-level formatting */
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+    }
+
+    .block-element {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #eaeaea;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Text and Block Formatting Example</h1>
+    
+    <p>This is a paragraph with <span class="italic-text">italic text</span> and <span class="bold-text">bold text</span>.</p>
+    
+    <p>Another paragraph with some <span class="italic-text bold-text">combined formatting</span>.</p>
+    
+    <div class="block-element">
+      <p>This is a block-level element within the container.</p>
+      <p>Block-level elements start on a new line and take up the full width available.</p>
+    </div>
+    
+    <div class="block-element">
+      <p>Another block-level element with its own styling.</p>
+      <p>You can add as many block-level elements as needed.</p>
+    </div>
+    
+  </div>
+
+</body>
+</html>

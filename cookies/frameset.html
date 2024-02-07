@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Frameset Example</title>
+</head>
+<frameset rows="30%, 70%">
+  <frame src="header.html" name="header" scrolling="no">
+  <frameset cols="20%, 80%">
+    <frame src="sidebar.html" name="sidebar" scrolling="auto">
+    <frame src="main_content.html" name="mainContent" scrolling="auto">
+  </frameset>
+  <noframes>
+    <body>
+      <p>This page uses frames, but your browser doesn't support them.</p>
+    </body>
+  </noframes>
+</frameset>
+</html>
